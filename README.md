@@ -2,9 +2,9 @@
 
 Lab 3 IETI
 
-Task Planner Part 1 - React JSURL
+Task Planner Part 2 - React JSURL
 
-[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://ieti-lab-3.herokuapp.com/)
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://ieti-lab-4.herokuapp.com/)
 
 ## Comenzando 
 
