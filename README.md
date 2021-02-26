@@ -11,7 +11,7 @@ Task Planner Part 2 - React JSURL
 Para tener una copia del repositorio, desde consola ejecute el siguiente comando.
 
 ```
-git clone https://github.com/JuanCe11/IETI-LAB3.git
+git clone https://github.com/JuanCe11/IETI-LAB4.git
 ```
 
 ### Pre-requisitos 
@@ -26,10 +26,14 @@ git clone https://github.com/JuanCe11/IETI-LAB3.git
 Para la correcta instalación se debe primero clonar el repositorio como se indicó anteriormente, después se ingresa al directorio del proyecto y para ejecutar la clase App (clase con el ejemplo de uso) se ejecutan los siguientes comandos.
 
 ```
-cd IETI-LAB3
+cd IETI-LAB4
 npm install
 npm start
 ```
+
+### Cambiar datos usuario
+
+Cuando se inicia sesion con un usuario (usuarios en src/utils/index.js) al darle click en el nombre de usuario del menu desplegable permite cambiar el nombre y la contraseña.
 
 ## Construido con 
 
@@ -37,7 +41,7 @@ npm start
 
 ## Wiki
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/JuanCe11/IETI-LAB3/wiki)
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/JuanCe11/IETI-LAB4/wiki)
 
 
 ## Autores 
