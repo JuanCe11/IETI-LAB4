@@ -25,20 +25,21 @@ const useStyles = makeStyles({
 export default function MediaCard(props) {
   const classes = useStyles();
 
+
   return (
     <Card className={classes.root}>
-        <CardHeader
-            action={
-            <IconButton aria-label="settings">
-                {props.todo.status === 'Completed'  ? <AssignmentTurnedInIcon /> : props.todo.status === 'Ready'? <DoneIcon />:<CachedIcon/>}
-            </IconButton>
-            }
+      <CardHeader
+        action={
+          <IconButton aria-label="settings">
+            {props.todo.status === 'Completed' ? <AssignmentTurnedInIcon /> : props.todo.status === 'Ready' ? <DoneIcon /> : <CachedIcon />}
+          </IconButton>
+        }
         title={props.todo.description}
       />
       <CardActionArea>
         <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-            {props.todo.status}-{props.todo.dueDate.toString()}
+            {props.todo.status}-{props.todo.dueDate.toDateString()}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {props.todo.responsible.name}

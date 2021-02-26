@@ -16,7 +16,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import UserProfile from './UserProfile';
 
 
 const drawerWidth = 240;
@@ -137,10 +137,7 @@ export default function PersistentDrawerLeft(props) {
         </div>
         <Divider />
         <List>
-          <ListItem button key={'User'}>
-            <ListItemIcon><AccountBoxIcon /></ListItemIcon>
-            <ListItemText primary={localStorage.getItem('user')} />
-          </ListItem>
+          <UserProfile />
         </List>
         <Divider />
         <List>

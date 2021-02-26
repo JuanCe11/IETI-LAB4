@@ -11,7 +11,7 @@ import LockIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import './Login.css';
-import { login } from '../utils';
+import { login, isLogin } from '../utils';
 
 export default class Login extends Component {
 
@@ -77,8 +77,9 @@ export default class Login extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         if (this.state.email.length && this.state.password.length) {
-            login();
+            login(this.state.email, this.state.password);
         }
-        this.props.history.push('/todo');
+        if (isLogin())
+            this.props.history.push('/todo');
     }
 }
